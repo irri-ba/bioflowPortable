@@ -1,2 +1,2 @@
 # bioflowPortable
-Portable version of bioflow
+Portable version of bioflow. Happy analysis.
