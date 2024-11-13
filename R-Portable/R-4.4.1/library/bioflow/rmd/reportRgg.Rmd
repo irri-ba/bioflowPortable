@@ -1,0 +1,275 @@
+---
+title: "Realized Genetic Gain Report"
+author: "Contact:<a href = 'https://github.com/Breeding-Analytics/bioflow' target = '_blank'>Breeding Analytics Team, OneCGIAR</a> breedinganalytics@cgiar.org"
+date: "`r format(Sys.time(), '%B %d, %Y')`"  
+output: html_document
+params:
+ toDownload: FALSE
+---
+
+```{r setup, include=FALSE}
+
+# knitr R markdown chunk options
+knitr::opts_chunk$set(dependson = knitr::all_labels(),
+                      echo = FALSE,
+                      cache = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      comment = NA,
+                      out.width = "100%",
+                      error = TRUE)
+options(knitr.kable.NA = '')
+
+# loading necessary R packages ####
+## data manipulation
+library(dplyr)    # %>%, data cleaning functions
+library(magrittr) # coerce col to factors or numeric
+
+## outputs - graphs, tables
+library(ggplot2)  # ggplot(), etc.
+library(plotly)  # ggplot(), etc.
+library(DT)       # datatable()
+library(knitr)    # kable
+library(grafify)
+library(data.table)
+library(shiny)
+```
+
+```{r printfxn, include=FALSE}
+
+# functions ####
+# for printing tables (data.frames) - DT::datatable()
+printTable <- function(DT, pageLength = 7, 
+                         numericColNames = NULL, numRound = 3, 
+                         scrollXOpt = FALSE, colNames = NULL, autoWidthOpt = FALSE,...) {
+    
+    DT <- data.frame(lapply(X = DT, 
+                            FUN = function(x) {
+                              if(is.numeric(x)){
+                                round(x, numRound)
+                              } else {
+                                x
+                              }
+                            }))
+    
+    table <- DT::datatable(data = DT, 
+                           colnames = colNames,
+                           filter = "top", 
+                           options = list(autoWidth = autoWidthOpt,
+                                          dom = 'l<<t>pB>', 
+                                          buttons = c('copy', 'excel'),
+                                          pageLength = pageLength,
+                                          searchHighlight = TRUE,
+                                          lengthMenu = c(7, 14, 21, 28, 35),
+                                          scrollX = scrollXOpt),
+                           extensions = 'Buttons',
+                           rownames = FALSE,
+                           ...)
+    if (length(numericColNames) > 0){
+      table <- table %>% DT::formatRound(columns = numericColNames,
+                                     digits = numRound)
+    }
+    
+    table
+  }
+```
+
+<!-- END of setup chunk -->
+
+```{r }
+suppressWarnings(tryCatch({
+  if(file.exists("./outputs/resultRgg.RData")){
+    load("./outputs/resultRgg.RData")
+  }else{
+    load("resultRgg.RData")
+  }
+}, error = function(e) {
+  shinyjs::hide()
+}))
+
+if (is.null(result)){
+  # invisible(NULL)
+} else {
+  
+  rggId <- result$status$analysisId[length(result$status$analysisId)]
+  mod <- result$modeling %>% filter(analysisId==rggId)
+  # predsId <- mod[mod$analysisId == rggId & mod$trait == "inputObject","value"]
+  pred <- result$predictions %>% filter(analysisId == rggId) # before we use the predsId but now we store the designation predictions in the rgg functions
+  met <- result$metrics %>% filter(analysisId==rggId)
+  traits <- unique(met$trait)
+  ped <- result$data$pedigree
+  paramsPed <- result$metadata$pedigree
+  colnames(ped) <- cgiarBase::replaceValues(colnames(ped), Search = paramsPed$value, Replace = paramsPed$parameter )
+  ped <- unique(ped[,c("designation","yearOfOrigin")])
+  # merge yearOfOrigin
+  myResult <- merge(pred,ped,by="designation")
+  myResult <- myResult[which(!is.na(myResult$yearOfOrigin)),]
+}
+```
+
+```{r, include=FALSE}
+# Init Step to make sure that the dependencies are loaded
+htmltools::tagList(printTable(mtcars))
+htmltools::tagList(ggplotly(ggplot()))
+# Get the current figure size in pixels:
+get_w <- function() {
+  with(knitr::opts_current$get(c("fig.width", "dpi", "fig.retina")),
+       fig.width*dpi/fig.retina)
+}
+
+get_h <- function() {
+  with(knitr::opts_current$get(c("fig.height", "dpi", "fig.retina")),
+       fig.height*dpi/fig.retina)
+}
+```
+
+### Summary metrics
+
+The following table allows you to review the different metrics calculated for the genetic gain analysis. You can filter the metrics using the search bar.
+
+```{r, results='asis'}
+if (is.null(result)){
+  # invisible(NULL)
+} else {
+  
+  numeric.output <- c("value", "stdError")
+  if("params" %in% ls()){ # we will download the document
+    # cat("\n\n## Table       \n\n")
+    printTable(met, autoWidthOpt = TRUE, scrollXOpt = FALSE,
+             colNames = colnames(met),
+           numericColNames = numeric.output,
+           numRound = 4)
+    # cat("\n")
+  }else{
+    h2("Table")
+    
+    DT::renderDT(printTable(met,
+                        autoWidthOpt = FALSE, scrollXOpt = TRUE,
+                        colNames = colnames(met),
+                        numericColNames = numeric.output,
+                        numRound = 4), server = FALSE)
+  }
+  
+}
+
+```
+
+### Summary metrics (wide-format)
+
+```{r, results='asis'}
+if (is.null(result)){
+  # invisible(NULL)
+} else {
+  
+  wide1 <- reshape(met[,c("trait","parameter","value")], direction = "wide", idvar = "trait",
+                   timevar = "parameter", v.names = "value", sep= "_")
+  colnames(wide1) <- gsub("value_","",colnames(wide1))
+  wide2 <- reshape(met[which(met$parameter %in% c("gg%","ggInter","ggSlope") ),c("trait","parameter","stdError")], direction = "wide", idvar = "trait",
+                   timevar = "parameter", v.names = "stdError", sep= "_")
+  wide <- merge(wide1, wide2, by="trait")
+  
+  numeric.output2 <- which( colnames(wide) %in% setdiff(colnames(wide), "trait") )
+  if("params" %in% ls()){ # we will download the document
+    # cat("\n\n## Table       \n\n")
+    printTable(wide, autoWidthOpt = TRUE, scrollXOpt = FALSE,
+             colNames = colnames(wide),
+           numericColNames = numeric.output2,
+           numRound = 4)
+    # cat("\n")
+  }else{
+    # h2("Table")
+    DT::renderDT(printTable(wide,
+                        autoWidthOpt = FALSE, scrollXOpt = TRUE,
+                        colNames = colnames(wide),
+                        numericColNames = numeric.output2,
+                        numRound = 4), server = FALSE)
+  }
+  
+}
+
+```
+
+### Regression plot
+
+```{r }
+if (is.null(result)){
+  # invisible(NULL)
+} else {
+  
+  if("params" %in% ls()){ # we will download the document
+    shinyjs::hide()
+  }else{
+    selectInput(ns("traitSta3"), 
+                label = "Trait:", 
+                multiple = FALSE,
+                choices = unique(traits), 
+    )
+  }
+  
+}
+
+```
+
+```{r, results='asis'}
+if (is.null(result)){
+  # invisible(NULL)
+} else {
+  
+  if("params" %in% ls()){ # we will download the document
+    cat("\n\n### {.tabset .tabset-pills}       \n\n")
+    
+    
+    for (j in 1:length(traits)){
+      cat("\n\n####", traits[j], "{.tabset .tabset-pills}       \n\n")
+      
+      # subset by trait
+      myPreds <- myResult %>% filter(trait == traits[j])
+      myMetrics <- met %>% filter(trait == traits[j])
+      myLabel <- paste0("Y = ", round(myMetrics[myMetrics$parameter == "ggInter","value"],4), " + ",
+                        round(myMetrics[myMetrics$parameter == "ggSlope","value"],4), " x Year, ", 
+                        round(myMetrics[myMetrics$parameter == "gg%(average.year)","value"],2),"% Gain")
+      p <- ggplot(myPreds, aes(x=yearOfOrigin, y=predictedValue  ) ) +
+        geom_smooth(method = "lm", formula = y ~ x) + 
+        theme_classic()+
+        geom_jitter(alpha = 0.6, width = 0.3) +
+        labs(title=myLabel,x="Year of origin", y = "Trait performance") +
+        theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) 
+      print(htmltools::tagList(plotly::ggplotly(p)))
+      
+      # cat("\n")
+    }
+    
+    cat("\n")
+  }else{ # regular rendering
+    plotly::renderPlotly({
+      myPreds <- myResult %>% filter(trait == input$traitSta3)
+      myMetrics <- met %>% filter(trait == input$traitSta3)
+      myLabel <- paste0("Y = ", round(myMetrics[myMetrics$parameter == "ggInter","value"],4), " + ",
+                        round(myMetrics[myMetrics$parameter == "ggSlope","value"],4), " x Year, ", 
+                        round(myMetrics[myMetrics$parameter == "gg%(average.year)","value"],2),"% Gain")
+      p <- ggplot(myPreds, aes(x=yearOfOrigin, y=predictedValue  ) ) +
+        geom_smooth(method = "lm", formula = y ~ x) + 
+        theme_classic()+
+        geom_jitter(alpha = 0.6, width = 0.3) +
+        labs(title=myLabel,x="Year of origin", y = "Trait performance") +
+        theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) 
+      fig <-  plotly::ggplotly(p)#, height = get_h()*2);
+      fig
+    })
+  }
+  
+}
+
+```
+
+
+### References on methods used
+
+Mackay, I., Horwell, A., Garner, J., White, J., McKee, J., & Philpott, H. (2011). Reanalyses of the historical series of UK variety trials to quantify the contributions of genetic and environmental factors to trends and variability in yield over time. Theoretical and Applied Genetics, 122, 225-238.
+
+Laidig, F., Piepho, H. P., Drobek, T., & Meyer, U. (2014). Genetic and non-genetic long-term trends of 12 different crops in German official variety performance trials and on-farm yield trends. Theoretical and Applied Genetics, 127, 2599-2617.
+
+R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
+
+<p>&nbsp;</p>
+
