@@ -1,0 +1,9 @@
+code_style: "no preference"
+skill: "beginner"
+task: "coding"
+language: "en"
+service: "openai"
+model: "gpt-4-turbo-preview"
+custom_prompt: null
+stream: true
+read_docs: false

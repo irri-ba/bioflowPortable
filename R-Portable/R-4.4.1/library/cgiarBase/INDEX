@@ -1,0 +1,30 @@
+Biodv                   Biodv
+applyGenoModifications
+                        Modifications to a marker matrix
+asremlFormula           Factor identification for model fitting
+atcg1234                Letter to number converter
+bindObjects             Binding bioflow objects
+cgiarBase               cgiarBase
+cleanChar               Clean names from special characters
+cleanCharField          Clean names from special characters
+computeGenoModifications
+                        Marker modifications
+computePedModifications
+                        computePedModifications
+crossVerification       Verification of a cross using markers
+fillDesignSingle        Fill field-gaps in row and column
+fixCoords               Fix coordinates information for miss-specified
+                        field trials
+geneticEvaluation3      Genetic evaluation
+grm2                    Genomic Relationship Matrix
+markerBackTransform     Letter to number converter
+matToTab                Matrix to Table
+mler                    Machine learning model
+nrm2                    Numerator Relationship Matrix
+printTable              Printing a table
+replaceValues           Replace values
+roundDF                 Rounding of numbers for data frames
+roundDT                 Rounding of numbers for data tables
+summaryData             Summary of data records in bioflow object
+summaryGeno             Summary of a modifications to a marker matrix
+tabToMat                Table to Matrix

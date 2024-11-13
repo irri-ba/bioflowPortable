@@ -1,0 +1,26 @@
+Package: cgiarPipeline
+Type: Package
+Title: Special functions for multiple analytical pipelines related to
+        Biometrics procedures.
+Version: 1.0.5
+Date: 2023-09-09
+Author: Giovanny Covarrubias-Pazaran, Ibnou Dieng, Khaled Al-Sham'aa, Angela Pacheco, Christian Cadena, Sergio Cruz
+Maintainer: Giovanny Covarrubias-Pazaran <covaruberpaz@gmail.com>
+Description: Software for analytical pipelines
+Depends: R (>= 3.5.0), Matrix (>= 1.1.1)
+License: GPL (>= 2)
+Imports: stats, graphics, grDevices
+Suggests: parallel, LMMsolver, sommer, RSpectra, pedigreemm
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: cgiarPipeline
+RemoteUsername: Breeding-Analytics
+RemoteRef: HEAD
+RemoteSha: d6bc2a99242cb71a286173c660dbed2f8e71f6d9
+GithubRepo: cgiarPipeline
+GithubUsername: Breeding-Analytics
+GithubRef: HEAD
+GithubSHA1: d6bc2a99242cb71a286173c660dbed2f8e71f6d9
+NeedsCompilation: no
+Packaged: 2024-11-13 05:24:47 UTC; RAPACHECO
+Built: R 4.4.1; ; 2024-11-13 05:24:48 UTC; windows

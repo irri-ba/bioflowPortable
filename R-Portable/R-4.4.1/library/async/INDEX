@@ -1,0 +1,55 @@
+async                   Create an async function
+async_backoff           Retry an asynchronous function with exponential
+                        backoff
+async_constant          Make a minimal deferred that resolves to the
+                        specified value
+async_debug             Async debugging utilities
+async_detect            Find the value of a match, asynchronously
+async_every             Do every or some elements of a list satisfy an
+                        asynchronous predicate?
+async_filter            Keep or drop elements using an asyncronous
+                        predicate function
+async_map               Apply an asynchronous function to each element
+                        of a vector
+async_race_some         A deferred value that resolves when the
+                        specified number of deferred values resolve, or
+                        is rejected when one of them is rejected
+async_reflect           Make an asynchronous function that always
+                        succeeds
+async_replicate         Replicate an async function a number of times
+async_retry             Retry an asynchronous function a number of
+                        times
+async_retryable         Make an asynchronous funcion retryable
+async_sequence          Compose asynchronous functions
+async_timeout           Asynchronous function call with a timeout
+async_timer             Repeated timer
+async_try_each          It runs each task in series but stops whenever
+                        any of the functions were successful. If one of
+                        the tasks were successful, the callback will be
+                        passed the result of the successful task. If
+                        all tasks fail, the callback will be passed the
+                        error and result (if any) of the final attempt.
+async_until             Repeatedly call task until it its test function
+                        returns 'TRUE'
+async_whilst            Repeatedly call task, while test returns true
+call_function           Asynchronous function call, in a worker pool
+deferred                Deferred value
+delay                   Delay async computation for the specified time
+event_emitter           Generic Event Emitter
+external_process        External process via a process generator
+http_get                Asynchronous HTTP GET request
+http_head               Asynchronous HTTP HEAD request
+http_post               Asynchronous HTTP POST request
+http_setopt             Set curl HTTP options in an event loop
+http_stop_for_status    Throw R errors for HTTP errors
+is_async                Checks if a function is async
+is_deferred             Is object a deferred value?
+run_event_loop          Run event loop to completion
+run_process             Asynchronous external process execution
+run_r_process           Asynchronous call to an R function, in a
+                        background R process
+sse_events              HTTP event emitter for server-sent events
+synchronise             Synchronously wrap asynchronous code
+when_all                Deferred value for a set of deferred values
+when_some               Resolve a deferred as soon as some deferred
+                        from a list resolve

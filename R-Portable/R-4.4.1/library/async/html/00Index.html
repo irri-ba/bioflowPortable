@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Asynchronous Computation and 'I/O'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Asynchronous Computation and 'I/O'
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;async&rsquo; version 0.0.0.9004</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="async_debug.html">.al</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">.an</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">.as</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">.asb</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">.at</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">.aw</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async.html">async</a></td>
+<td>Create an async function</td></tr>
+<tr><td style="width: 25%;"><a href="async_backoff.html">async_backoff</a></td>
+<td>Retry an asynchronous function with exponential backoff</td></tr>
+<tr><td style="width: 25%;"><a href="async_constant.html">async_constant</a></td>
+<td>Make a minimal deferred that resolves to the specified value</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_debug</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_debug_remove_shortcuts</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_debug_shortcuts</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_detect.html">async_detect</a></td>
+<td>Find the value of a match, asynchronously</td></tr>
+<tr><td style="width: 25%;"><a href="async_every.html">async_every</a></td>
+<td>Do every or some elements of a list satisfy an asynchronous predicate?</td></tr>
+<tr><td style="width: 25%;"><a href="async_filter.html">async_filter</a></td>
+<td>Keep or drop elements using an asyncronous predicate function</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_list</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_map.html">async_map</a></td>
+<td>Apply an asynchronous function to each element of a vector</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_next</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_race_some.html">async_race</a></td>
+<td>A deferred value that resolves when the specified number of deferred values resolve, or is rejected when one of them is rejected</td></tr>
+<tr><td style="width: 25%;"><a href="async_race_some.html">async_race_some</a></td>
+<td>A deferred value that resolves when the specified number of deferred values resolve, or is rejected when one of them is rejected</td></tr>
+<tr><td style="width: 25%;"><a href="async_reflect.html">async_reflect</a></td>
+<td>Make an asynchronous function that always succeeds</td></tr>
+<tr><td style="width: 25%;"><a href="async_filter.html">async_reject</a></td>
+<td>Keep or drop elements using an asyncronous predicate function</td></tr>
+<tr><td style="width: 25%;"><a href="async_replicate.html">async_replicate</a></td>
+<td>Replicate an async function a number of times</td></tr>
+<tr><td style="width: 25%;"><a href="async_retry.html">async_retry</a></td>
+<td>Retry an asynchronous function a number of times</td></tr>
+<tr><td style="width: 25%;"><a href="async_retryable.html">async_retryable</a></td>
+<td>Make an asynchronous funcion retryable</td></tr>
+<tr><td style="width: 25%;"><a href="async_sequence.html">async_sequence</a></td>
+<td>Compose asynchronous functions</td></tr>
+<tr><td style="width: 25%;"><a href="async_every.html">async_some</a></td>
+<td>Do every or some elements of a list satisfy an asynchronous predicate?</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_step</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_step_back</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_timeout.html">async_timeout</a></td>
+<td>Asynchronous function call with a timeout</td></tr>
+<tr><td style="width: 25%;"><a href="async_timer.html">async_timer</a></td>
+<td>Repeated timer</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_tree</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_try_each.html">async_try_each</a></td>
+<td>It runs each task in series but stops whenever any of the functions were successful. If one of the tasks were successful, the callback will be passed the result of the successful task. If all tasks fail, the callback will be passed the error and result (if any) of the final attempt.</td></tr>
+<tr><td style="width: 25%;"><a href="async_until.html">async_until</a></td>
+<td>Repeatedly call task until it its test function returns 'TRUE'</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_wait_for</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_debug.html">async_where</a></td>
+<td>Async debugging utilities</td></tr>
+<tr><td style="width: 25%;"><a href="async_whilst.html">async_whilst</a></td>
+<td>Repeatedly call task, while test returns true</td></tr>
+<tr><td style="width: 25%;"><a href="call_function.html">call_function</a></td>
+<td>Asynchronous function call, in a worker pool</td></tr>
+<tr><td style="width: 25%;"><a href="deferred.html">deferred</a></td>
+<td>Deferred value</td></tr>
+<tr><td style="width: 25%;"><a href="delay.html">delay</a></td>
+<td>Delay async computation for the specified time</td></tr>
+<tr><td style="width: 25%;"><a href="event_emitter.html">event_emitter</a></td>
+<td>Generic Event Emitter</td></tr>
+<tr><td style="width: 25%;"><a href="external_process.html">external_process</a></td>
+<td>External process via a process generator</td></tr>
+<tr><td style="width: 25%;"><a href="http_get.html">http_get</a></td>
+<td>Asynchronous HTTP GET request</td></tr>
+<tr><td style="width: 25%;"><a href="http_head.html">http_head</a></td>
+<td>Asynchronous HTTP HEAD request</td></tr>
+<tr><td style="width: 25%;"><a href="http_post.html">http_post</a></td>
+<td>Asynchronous HTTP POST request</td></tr>
+<tr><td style="width: 25%;"><a href="http_setopt.html">http_setopt</a></td>
+<td>Set curl HTTP options in an event loop</td></tr>
+<tr><td style="width: 25%;"><a href="http_stop_for_status.html">http_stop_for_status</a></td>
+<td>Throw R errors for HTTP errors</td></tr>
+<tr><td style="width: 25%;"><a href="is_async.html">is_async</a></td>
+<td>Checks if a function is async</td></tr>
+<tr><td style="width: 25%;"><a href="is_deferred.html">is_deferred</a></td>
+<td>Is object a deferred value?</td></tr>
+<tr><td style="width: 25%;"><a href="run_event_loop.html">run_event_loop</a></td>
+<td>Run event loop to completion</td></tr>
+<tr><td style="width: 25%;"><a href="run_process.html">run_process</a></td>
+<td>Asynchronous external process execution</td></tr>
+<tr><td style="width: 25%;"><a href="run_r_process.html">run_r_process</a></td>
+<td>Asynchronous call to an R function, in a background R process</td></tr>
+<tr><td style="width: 25%;"><a href="sse_events.html">sse_events</a></td>
+<td>HTTP event emitter for server-sent events</td></tr>
+<tr><td style="width: 25%;"><a href="synchronise.html">synchronise</a></td>
+<td>Synchronously wrap asynchronous code</td></tr>
+<tr><td style="width: 25%;"><a href="when_all.html">when_all</a></td>
+<td>Deferred value for a set of deferred values</td></tr>
+<tr><td style="width: 25%;"><a href="when_some.html">when_any</a></td>
+<td>Resolve a deferred as soon as some deferred from a list resolve</td></tr>
+<tr><td style="width: 25%;"><a href="when_some.html">when_some</a></td>
+<td>Resolve a deferred as soon as some deferred from a list resolve</td></tr>
+</table>
+</div></body></html>

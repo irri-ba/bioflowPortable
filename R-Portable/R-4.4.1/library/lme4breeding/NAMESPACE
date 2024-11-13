@@ -1,0 +1,22 @@
+
+import("methods")
+import("Matrix")
+import("lme4")
+import("crayon")
+
+importFrom("utils", "setTxtProgressBar", "txtProgressBar")
+
+importFrom("stats", "as.formula", "cov", "model.matrix", "na.omit",
+           "na.pass", "median", "reshape","var","aggregate")
+
+export( "lmebreed", "smm", "rrm", "redmm", "overlay", "add.diallel.vars",
+        "build.HMM","bbasis","tps","A.mat","atcg1234","imputev", "getMME",
+        "stackTrait", "fillData", "leg", "adjBeta", "umat", 
+        "simage")
+
+exportMethods(
+              "coerce",
+              "fitted",
+              "ranef",
+              "residuals"
+              )
