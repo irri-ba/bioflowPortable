@@ -7,7 +7,9 @@ This is a portable version of bioflow for Windows system.
 1) Download the repository in one of the following ways:
 
     1A) Click on the green button "Code" and select the option "Download ZIP"
+    
     1B) Clone the repository in your computer using git, for example typing in the terminal:
+    
         git clone https://github.com/Breeding-Analytics/bioflowPortable.git
 
 2) Unzip the folder in case you use 1A, otherwise move to step 3.
