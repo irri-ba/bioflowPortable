@@ -1,0 +1,30 @@
+baseIndex               Base selection index pipeline
+cgiarPipeline           cgiarPipeline
+equalizeTraits          Trait Equalizing
+indexDesire             Desire selection index pipeline
+individualVerification
+                        Verification of a cross using markers
+markerAssistedSelection
+                        Apply Marker Assisted Selection
+metLMM                  Multi-environmental trial analysis pipeline
+                        using LMM
+metLMMsolver            Multi-environmental trial analysis pipeline
+                        using LMMsove function from LMMsolver package
+metML                   Multi-environmental trial analysis pipeline
+                        using Machine Learning models
+modifExpDesign          Modify Experimental Design
+mtaLmmFlex              Multi-environmental trial analysis pipeline
+                        using LMM
+nasaPowerExtraction     Extraction of weather data
+newOutliersFun          Outlier identification
+numberFounders          Calculates the number of founders based on
+                        allele coverage.
+ocs                     Optimal cross selection pipeline
+pgg                     Predicted genetic gain pipeline.
+rggMackay               Realized genetic gain pipeline (Mackay's
+                        method).
+rggPiepho               Realized genetic gain pipeline (Laidig's
+                        method).
+singleCrossMat          Single-Cross Marker Matrix Built.
+staLMM                  Single-trial analysis pipeline using LMM
+traitTransformation     Trait Transformation

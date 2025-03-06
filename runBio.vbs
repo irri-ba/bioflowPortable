@@ -1,4 +1,4 @@
-Rexe           = "R-Portable\R-4.4.1\bin\Rscript.exe"
+Rexe           = "R-Portable\R-4.4.3\bin\Rscript.exe"
 Ropts          = "--no-save --no-environ --no-init-file --no-restore --no-Rconsole"
 RScriptFile    = "runBioflowApp.R"
 Outfile        = "ShinyAppBioflow.log" 

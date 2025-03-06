@@ -1,7 +1,0 @@
-get_power               Get NASA POWER Data From the POWER API
-query_groupings         Query the POWER API for Detailed Information on
-                        Available Parameter Groupings
-query_parameters        Query the POWER API for Detailed Information on
-                        Available Parameters
-query_surfaces          Query the POWER API for Detailed Information on
-                        Wind Type Surfaces

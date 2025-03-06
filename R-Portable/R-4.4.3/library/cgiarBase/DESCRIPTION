@@ -1,0 +1,25 @@
+Package: cgiarBase
+Type: Package
+Title: Base functions for biometrics analysis
+Version: 1.0.3
+Date: 2024-04-04
+Author: Giovanny Covarrubias-Pazaran, Ibnou Dieng, Khaled Al-Sham'aa, Angela Pacheco, Christian Cadena, Sergio Cruz
+Maintainer: Giovanny Covarrubias-Pazaran <covaruberpaz@gmail.com>
+Description: Software for analytical pipelines
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Imports: stats, graphics, grDevices, pbapply
+Suggests: parallel
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: cgiarBase
+RemoteUsername: Breeding-Analytics
+RemoteRef: HEAD
+RemoteSha: e2460c33eb7419365f8c649bc2bb69062e11e8d2
+GithubRepo: cgiarBase
+GithubUsername: Breeding-Analytics
+GithubRef: HEAD
+GithubSHA1: e2460c33eb7419365f8c649bc2bb69062e11e8d2
+NeedsCompilation: no
+Packaged: 2025-03-06 17:04:33 UTC; RAPACHECO
+Built: R 4.4.3; ; 2025-03-06 17:04:33 UTC; windows

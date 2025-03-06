@@ -1,4 +1,4 @@
-.libPaths("./R-Portable/R-4.4.1/library")
+.libPaths("./R-Portable/R-4.4.3/library")
 message('library paths:\n', paste('... ', .libPaths(), sep='', collapse='\n'))
 
 #library(devtools)
