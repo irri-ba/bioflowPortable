@@ -15,11 +15,11 @@ RemoteHost: api.github.com
 RemoteRepo: cgiarBase
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: e2460c33eb7419365f8c649bc2bb69062e11e8d2
+RemoteSha: 42bf146d7630e1ddbcf1f6473b996216f1c45077
 GithubRepo: cgiarBase
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: e2460c33eb7419365f8c649bc2bb69062e11e8d2
+GithubSHA1: 42bf146d7630e1ddbcf1f6473b996216f1c45077
 NeedsCompilation: no
-Packaged: 2025-03-06 17:04:33 UTC; RAPACHECO
-Built: R 4.4.3; ; 2025-03-06 17:04:33 UTC; windows
+Packaged: 2025-07-14 06:00:51 UTC; JBonifacio
+Built: R 4.4.3; ; 2025-07-14 06:00:52 UTC; windows

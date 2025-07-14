@@ -15,17 +15,19 @@ License: GPL (>= 3)
 URL: https://github.com/Breeding-Analytics/bioflow/
 BugReports: https://github.com/Breeding-Analytics/bioflow/issues
 Imports: ape, cgiarBase (>= 1.0.3), cgiarOcs (>= 1.1), cgiarPipeline
-        (>= 1.0.6), config (>= 0.3.2), data.table, DT, future,
-        ggnetwork, ggplot2, golem (>= 0.4.0), grafify, gridExtra,
-        htmltools, httr2, inline, janitor, jsonlite, kableExtra, lme4,
-        lme4breeding (>= 1.0.1), LMMsolver, magrittr, markdown,
-        nasapower, network, pedigreemm, pkgload, plotly, plyr,
-        promises, psych, QBMS (>= 1.5.0), RColorBrewer, reshape, rhub,
-        rlang, rmdformats, roxygen2, RSpectra, shiny (>= 1.7.5),
-        shinyAce, shinyalert, shinybusy, shinyBS, shinycssloaders,
-        shinydashboard, shinydashboardPlus, shinyjs, shinymanager,
-        shinyWidgets, slickR, sommer, st4gi (>= 3.1.1), stats, stringi,
-        stringr, textshape, tibble, tidyr, utils, vcfR, digest
+        (>= 1.0.6), cgiarGenomics (>= 1.0.1), config (>= 0.3.2),
+        data.table, DT, future, ggnetwork, ggplot2, golem (>= 0.4.0),
+        grafify, gridExtra, htmltools, httr2, inline, janitor,
+        jsonlite, kableExtra, lme4, lme4breeding (>= 1.0.1), LMMsolver,
+        magrittr, markdown, nasapower, network, pedigreemm, pkgload,
+        plotly, plyr, promises, psych, QBMS (>= 1.5.0), RColorBrewer,
+        reshape, rhub, rlang, rmdformats, roxygen2, RSpectra, shiny (>=
+        1.7.5), shinyAce, shinyalert, shinybusy, shinyBS,
+        shinycssloaders, shinydashboard, shinydashboardPlus, shinyjs,
+        shinymanager, shinyWidgets, sommer, st4gi (>= 3.1.1), stats,
+        stringi, stringr, textshape, tibble, tidyr, utils, vcfR,
+        digest, paws, callr, ggcorrplot, SNPRelate (>= 1.38.1),
+        dartR.base
 Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
@@ -35,19 +37,20 @@ LazyData: true
 RoxygenNote: 7.3.2.9000
 Remotes: Breeding-Analytics/cgiarBase,
         Breeding-Analytics/cgiarPipeline, Breeding-Analytics/cgiarOcs,
-        reyzaguirre/st4gi, covaruber/lme4breeding
+        Breeding-Analytics/cgiarGenomics, reyzaguirre/st4gi,
+        covaruber/lme4breeding, zhengxwen/SNPRelate
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: bioflow
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 2d912faae9c0af653b2f84b4052e9adfc3a3f6cd
+RemoteSha: 4b262a258461516bc232b90001c168a48fef78cf
 GithubRepo: bioflow
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 2d912faae9c0af653b2f84b4052e9adfc3a3f6cd
+GithubSHA1: 4b262a258461516bc232b90001c168a48fef78cf
 NeedsCompilation: no
-Packaged: 2025-03-06 17:08:36 UTC; RAPACHECO
+Packaged: 2025-07-14 06:40:25 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -57,4 +60,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2025-03-06 17:08:39 UTC; windows
+Built: R 4.4.3; ; 2025-07-14 06:40:31 UTC; windows

@@ -25,7 +25,6 @@ ck.f                    Check data for a full factorial
 ck.fq                   Check frequencies
 ck.fs                   Check factors structure
 ck.lxt                  Check data for a line by tester genetic design
-ck.pos                  Check row and column positions
 ck.rcbd                 Check data for a RCBD
 ck.w                    Check data for a Wescott layout
 clean.data              Clean potato and sweetpotato data
