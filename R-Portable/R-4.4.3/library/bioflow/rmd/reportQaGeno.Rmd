@@ -78,9 +78,9 @@ printTable <- function(DT, pageLength = 7,
 
 suppressWarnings(tryCatch({
   if(file.exists("./outputs/result.RData")){
-    load("./outputs/resultQaPheno.RData")
+    load("./outputs/resultQaGeno.RData")
   }else{
-    load("resultQaPheno.RData")
+    load("resultQaGeno.RData")
   }
 }, error = function(e) {
   shinyjs::hide()
