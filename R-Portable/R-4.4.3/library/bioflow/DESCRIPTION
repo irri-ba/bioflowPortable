@@ -43,13 +43,13 @@ RemoteHost: api.github.com
 RemoteRepo: bioflow
 RemoteUsername: irri-ba
 RemoteRef: HEAD
-RemoteSha: b0a834558ec7d8c33018b68eb345488bb5c8e010
+RemoteSha: f7d25d00e6339abcb2a2a6e760f1f378a5063fcb
 GithubRepo: bioflow
 GithubUsername: irri-ba
 GithubRef: HEAD
-GithubSHA1: b0a834558ec7d8c33018b68eb345488bb5c8e010
+GithubSHA1: f7d25d00e6339abcb2a2a6e760f1f378a5063fcb
 NeedsCompilation: no
-Packaged: 2025-07-15 13:56:55 UTC; JBonifacio
+Packaged: 2025-07-17 05:24:14 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -59,4 +59,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2025-07-15 13:57:06 UTC; windows
+Built: R 4.4.3; ; 2025-07-17 05:24:19 UTC; windows
