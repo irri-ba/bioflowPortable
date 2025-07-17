@@ -16,9 +16,9 @@ This is a portable version of bioflow for Windows system.
 
 3) Open the folder and look for the file named "runBio.vbs" and double click on it.
 
-4) When the executable starts it will open an R session and look for updates in the packages behind bioflow. Please don't type or close anything, after some seconds in case there are no updates you will see the browser opening bioflow.
+**Note:** Some features used in the generation of HTML report do not work using the current pandoc version that comes with this portable version. Unfortunately, the pandoc version cannot be updated because of the file size. As a workaround, kindly download the latest pandoc version from this link: https://github.com/jgm/pandoc/releases?page=1 then copy the pandoc.exe file and then paste it inside the pandocExe folder before running runBio.vbs
 
-**Note:** Some features used in the generation of HTML report do not work using the current pandoc version that comes with this portable version. Unfortunately, the pandoc version cannot be updated because of file size. As a workaround, kindly download the latest pandoc version from this link: https://github.com/jgm/pandoc/releases?page=1 then copy the pandoc.exe file and then paste it inside the pandocExe folder.
+4) When the executable starts it will open an R session. Please don't type or close anything, after some seconds you will see the browser opening bioflow.
 
 5) Start using bioflow
 
