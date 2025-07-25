@@ -9,18 +9,18 @@ Maintainer: Giovanny Covarrubias-Pazaran <covaruberpaz@gmail.com>
 Description: Software for analytical pipelines
 Depends: R (>= 3.5.0), Matrix (>= 1.1.1)
 License: GPL (>= 2)
-Imports: stats, graphics, grDevices
-Suggests: parallel, LMMsolver, sommer, RSpectra, pedigreemm, poolr
+Imports: stats, graphics, grDevices, poolr
+Suggests: parallel, LMMsolver, sommer, RSpectra, pedigreemm
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: cgiarPipeline
 RemoteUsername: irri-ba
 RemoteRef: HEAD
-RemoteSha: a42288c18eedc59a2e22e23af2bc418c736b9361
+RemoteSha: 00a245bc6c2efd700d3c7b93ed66de89531ffe3e
 GithubRepo: cgiarPipeline
 GithubUsername: irri-ba
 GithubRef: HEAD
-GithubSHA1: a42288c18eedc59a2e22e23af2bc418c736b9361
+GithubSHA1: 00a245bc6c2efd700d3c7b93ed66de89531ffe3e
 NeedsCompilation: no
-Packaged: 2025-07-17 05:23:18 UTC; JBonifacio
-Built: R 4.4.3; ; 2025-07-17 05:23:20 UTC; windows
+Packaged: 2025-07-25 01:01:14 UTC; JBonifacio
+Built: R 4.4.3; ; 2025-07-25 01:01:17 UTC; windows

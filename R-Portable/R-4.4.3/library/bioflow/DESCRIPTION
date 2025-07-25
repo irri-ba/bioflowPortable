@@ -21,12 +21,13 @@ Imports: ape, cgiarBase (>= 1.0.3), cgiarOcs (>= 1.1), cgiarPipeline
         jsonlite, kableExtra, lme4, lme4breeding (>= 1.0.1), LMMsolver,
         magrittr, markdown, nasapower, network, pedigreemm, pkgload,
         plotly, plyr, promises, psych, RColorBrewer, reshape, rhub,
-        rlang, rmdformats, roxygen2, RSpectra, shiny (>= 1.7.5),
-        shinyAce, shinyalert, shinybusy, shinyBS, shinycssloaders,
-        shinydashboard, shinydashboardPlus, shinyjs, shinymanager,
-        shinyWidgets, sommer, st4gi (>= 3.1.1), stats, stringi,
-        stringr, textshape, tibble, tidyr, utils, vcfR, digest, paws,
-        callr, ggcorrplot, SNPRelate (>= 1.38.1), dartR.base
+        rlang, rmdformats, roxygen2, rstatix, RSpectra, shiny (>=
+        1.7.5), shinyAce, shinyalert, shinybusy, shinyBS,
+        shinycssloaders, shinydashboard, shinydashboardPlus, shinyjs,
+        shinymanager, shinyWidgets, sommer, st4gi (>= 3.1.1), stats,
+        stringi, stringr, textshape, tibble, tidyr, utils, vcfR,
+        digest, paws, callr, ggcorrplot, SNPRelate (>= 1.38.1),
+        dartR.base, rstatix
 Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
@@ -43,13 +44,13 @@ RemoteHost: api.github.com
 RemoteRepo: bioflow
 RemoteUsername: irri-ba
 RemoteRef: HEAD
-RemoteSha: f7d25d00e6339abcb2a2a6e760f1f378a5063fcb
+RemoteSha: c658865942ba86c50809727cdffdd7e5df890921
 GithubRepo: bioflow
 GithubUsername: irri-ba
 GithubRef: HEAD
-GithubSHA1: f7d25d00e6339abcb2a2a6e760f1f378a5063fcb
+GithubSHA1: c658865942ba86c50809727cdffdd7e5df890921
 NeedsCompilation: no
-Packaged: 2025-07-17 05:24:14 UTC; JBonifacio
+Packaged: 2025-07-25 01:00:22 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -59,4 +60,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2025-07-17 05:24:19 UTC; windows
+Built: R 4.4.3; ; 2025-07-25 01:00:29 UTC; windows
