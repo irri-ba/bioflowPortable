@@ -31,6 +31,7 @@ library(DT)       # datatable()
 library(knitr)    # kable
 library(data.table)
 library(shiny)
+library(maps)
 ```
 
 ```{r printfxn, include=FALSE}
@@ -116,6 +117,7 @@ if (is.null(result)){
 } else {
   
   if(!is.null(result$data$weather)){ # if weather data was extracted
+    if(nrow(result$data$weather)>0){
     yy <- result$metadata$weather
     yy <- yy[yy$parameter != "trait",]
     xx <- cgiarPipeline::summaryWeather(result)
@@ -167,7 +169,7 @@ if (is.null(result)){
         fig
         
       })
-      
+    }
     }
   }else{
     cat("No coordinates available. Skipping planting map.")
@@ -369,6 +371,16 @@ if (is.null(result)){
       pheno <- result$data$pheno
       pheno <- pheno[,which(!duplicated(colnames(pheno)))]
       metaPheno <- result$metadata$pheno; metaPheno <- metaPheno[metaPheno$parameter != "trait", ]
+      
+      for(i in 1:length(metaPheno$parameter)){
+        if((metaPheno$parameter[i] %in% colnames(pheno)) & 
+           (metaPheno$parameter[i] != metaPheno$value[i])){
+          colnames(pheno) <- replace(colnames(pheno), 
+                                     colnames(pheno) == metaPheno$parameter[i],
+                                     paste0(metaPheno$parameter[i],"_dup"))
+          }
+      }
+      
       colnames(pheno) <- cgiarBase::replaceValues( colnames(pheno), Search = metaPheno$value, Replace = metaPheno$parameter)
       
       if("params" %in% ls()){ # we will download the document

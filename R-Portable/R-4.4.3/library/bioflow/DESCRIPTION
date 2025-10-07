@@ -1,7 +1,7 @@
 Package: bioflow
 Title: CGIAR Breeding Analytics Pipeline
 Description: CGIAR Breeding Analytics Pipeline
-Version: 0.1.0
+Version: 2.0.1
 Authors@R: c(
     person("Giovanny", "Covarrubias Pazaran", , "covaruberpaz@gmail.com", role = c("aut", "cre")),
     person("Ibnou", "Dieng", , "i.dieng@cgiar.org", role = c("aut")),
@@ -14,10 +14,10 @@ Authors@R: c(
 License: GPL (>= 3)
 URL: https://github.com/Breeding-Analytics/bioflow/
 BugReports: https://github.com/Breeding-Analytics/bioflow/issues
-Imports: ape, cgiarBase (>= 1.0.3), cgiarOcs (>= 1.1), cgiarPipeline
-        (>= 1.0.6), cgiarGenomics (>= 1.0.1), config (>= 0.3.2),
-        data.table, DT, future, ggnetwork, ggplot2, golem (>= 0.4.0),
-        grafify, gridExtra, htmltools, httr2, inline, janitor,
+Imports: ape, bslib, cgiarBase (>= 1.0.3), cgiarOcs (>= 1.1),
+        cgiarPipeline (>= 1.0.6), cgiarGenomics (>= 1.0.1), config (>=
+        0.3.2), data.table, DT, future, ggnetwork, ggplot2, golem (>=
+        0.4.0), grafify, gridExtra, htmltools, httr2, inline, janitor,
         jsonlite, kableExtra, lme4, lme4breeding (>= 1.0.1), LMMsolver,
         magrittr, markdown, nasapower, network, pedigreemm, pkgload,
         plotly, plyr, promises, psych, RColorBrewer, reshape, rhub,
@@ -44,13 +44,13 @@ RemoteHost: api.github.com
 RemoteRepo: bioflow
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 7db5947f8fe658ee2a638b3be559b52b71ee2f81
+RemoteSha: 133b6dac4dfb6a80037c2a1d9891c5fbc044459e
 GithubRepo: bioflow
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 7db5947f8fe658ee2a638b3be559b52b71ee2f81
+GithubSHA1: 133b6dac4dfb6a80037c2a1d9891c5fbc044459e
 NeedsCompilation: no
-Packaged: 2025-08-14 02:28:17 UTC; JBonifacio
+Packaged: 2025-10-07 05:52:20 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -60,4 +60,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2025-08-14 02:28:24 UTC; windows
+Built: R 4.4.3; ; 2025-10-07 05:52:25 UTC; windows

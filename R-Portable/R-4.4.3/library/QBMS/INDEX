@@ -1,5 +1,4 @@
 brapi_get_call          Internal Function for Core BrAPI GET Calls
-brapi_headers           Generate Common HTTP Headers for API Requests
 brapi_map               BrAPI Mapping Table
 brapi_post_search_allelematrix
                         Internal Function Used for Core BrAPI POST
@@ -23,6 +22,7 @@ get_germplasm_list      Get the Germplasm List of the Current Active
                         Study
 get_hwsd2               Get HWSD v2 Soil Data for a Given Location(s)
 get_login_details       Login Pop-Up Window
+get_marker_map          Get marker position information
 get_parents             Get Direct Parents
 get_pedigree_table      Get the Pedigree Table
 get_program_studies     Get the List of Trials, Studies, and Locations
@@ -40,6 +40,9 @@ get_trial_data          Get the Observations Data of the Current Active
 get_trial_obs_ontology
                         Get the Traits Ontology/Metadata of the Current
                         Active Trial
+get_trial_pedigree      Get the Pedigree table for the Selected Trial
+get_variants            Get Marker Matrix from the Selected Variant Set
+get_variantset          Get Marker Matrix from the Selected Variant Set
 gigwa_get_allelematrix
                         Get Markers Matrix in the Selected GIGWA Run
 gigwa_get_markers       Get Markers Map in the Selected GIGWA Run
@@ -71,8 +74,11 @@ list_studies            Get the List of Studies in the Current Active
                         Trial
 list_trials             List Trials in the Current Active Breeding
                         Program
+list_variantsets        List Variant Sets in the Selected Study
+login                   Login to a BrAPI Server
 login_bms               Login to the Server
 login_breedbase         Login to the BreedBase Server
+login_germinate         Login to the Germinate Server
 login_gigwa             Login to the GIGWA Server
 login_oauth2            Login using OAuth 2.0 Authentication
 rbindlistx              Make One Data.Table from a List of Many
@@ -86,3 +92,4 @@ set_qbms_connection     Set the QBMS Connection
 set_study               Set the Current Active Study
 set_token               Set Access Token Response
 set_trial               Set the Current Active Trial
+set_variantset          Set the Active Variant Set

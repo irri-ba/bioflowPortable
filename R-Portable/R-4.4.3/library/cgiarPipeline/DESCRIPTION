@@ -14,13 +14,13 @@ Suggests: parallel, LMMsolver, sommer, RSpectra, pedigreemm
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: cgiarPipeline
-RemoteUsername: irri-ba
+RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 30eb0f969f5f3e01ed02e0943b99fb3301af102e
+RemoteSha: 2af0d11c922f01b4bbc904fef8475e19bbce770b
 GithubRepo: cgiarPipeline
-GithubUsername: irri-ba
+GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 30eb0f969f5f3e01ed02e0943b99fb3301af102e
+GithubSHA1: 2af0d11c922f01b4bbc904fef8475e19bbce770b
 NeedsCompilation: no
-Packaged: 2025-08-14 02:29:18 UTC; JBonifacio
-Built: R 4.4.3; ; 2025-08-14 02:29:20 UTC; windows
+Packaged: 2025-10-07 05:47:03 UTC; JBonifacio
+Built: R 4.4.3; ; 2025-10-07 05:47:05 UTC; windows

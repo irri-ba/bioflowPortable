@@ -6,21 +6,22 @@ Date: 2022-09-09
 Author: Sergio
 Maintainer: Sergio <s.cruz@cgiar.org>
 Description: Software for genomics applications
-Depends: R (>= 3.5.0), adegenet, dplyr, stringr, vcfR, dartR.base,
-        ggplot2, purrr, SNPRelate
+Depends: R (>= 3.5.0), adegenet, magrittr, dplyr, stringr, vcfR,
+        dartR.base, ggplot2, purrr, SNPRelate
 License: GPL (>= 2)
 Suggests: parallel
 remotes: bioc::3.19/SNPRelate, bioc::3.21/snpStats
+RoxygenNote: 7.3.2
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: cgiarGenomics
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: fc4367f569b1398d24497af50c87d6c3be3d99b9
+RemoteSha: e2beeb65a8a08c34b889611edfc72e27acddce08
 GithubRepo: cgiarGenomics
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: fc4367f569b1398d24497af50c87d6c3be3d99b9
+GithubSHA1: e2beeb65a8a08c34b889611edfc72e27acddce08
 NeedsCompilation: no
-Packaged: 2025-07-14 06:26:50 UTC; JBonifacio
-Built: R 4.4.3; ; 2025-07-14 06:27:10 UTC; windows
+Packaged: 2025-10-07 05:45:22 UTC; JBonifacio
+Built: R 4.4.3; ; 2025-10-07 05:45:43 UTC; windows
