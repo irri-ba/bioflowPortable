@@ -42,15 +42,15 @@ Remotes: Breeding-Analytics/cgiarBase,
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: bioflow
-RemoteUsername: Breeding-Analytics
+RemoteUsername: jbbonifacio
 RemoteRef: HEAD
-RemoteSha: 133b6dac4dfb6a80037c2a1d9891c5fbc044459e
+RemoteSha: 3b664e2b129c32b02ffd8dcf025275844c5591f3
 GithubRepo: bioflow
-GithubUsername: Breeding-Analytics
+GithubUsername: jbbonifacio
 GithubRef: HEAD
-GithubSHA1: 133b6dac4dfb6a80037c2a1d9891c5fbc044459e
+GithubSHA1: 3b664e2b129c32b02ffd8dcf025275844c5591f3
 NeedsCompilation: no
-Packaged: 2025-10-07 05:52:20 UTC; JBonifacio
+Packaged: 2025-10-08 06:24:20 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -60,4 +60,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2025-10-07 05:52:25 UTC; windows
+Built: R 4.4.3; ; 2025-10-08 06:24:26 UTC; windows
