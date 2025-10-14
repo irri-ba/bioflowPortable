@@ -1,6 +1,7 @@
 baseIndex               Base selection index pipeline
 cgiarPipeline           cgiarPipeline
 equalizeTraits          Trait Equalizing
+funchunt                subset of a population
 gpcp                    Genomic Prediction of Cross Performance
                         Pipeline
 indexDesire             Desire selection index pipeline
