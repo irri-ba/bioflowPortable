@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head><title>R: Relationship-Based Mixed-Effects Models</title>
+<head><title>R: Breeding-Related Mixed-Effects Models</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
-<h1> Relationship-Based Mixed-Effects Models
+<h1> Breeding-Related Mixed-Effects Models
 <img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
 </h1>
 <hr/>
 <div style="text-align: center;">
 <a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
 <a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
-</div><h2>Documentation for package &lsquo;lme4breeding&rsquo; version 1.0.64</h2>
+</div><h2>Documentation for package &lsquo;lme4breeding&rsquo; version 1.1.0</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 </ul>
@@ -39,14 +39,22 @@
 <td>Gryphon data from the Journal of Animal Ecology</td></tr>
 <tr><td style="width: 25%;"><a href="DT_ige.html">A_ige</a></td>
 <td>Data to fit indirect genetic effects.</td></tr>
+<tr><td style="width: 25%;"><a href="balanceData.html">balanceData</a></td>
+<td>Balance a dataset</td></tr>
 <tr><td style="width: 25%;"><a href="bbasis.html">bbasis</a></td>
 <td>Function for creating B-spline basis functions (Eilers &amp; Marx, 2010)</td></tr>
 <tr><td style="width: 25%;"><a href="build.HMM.html">build.HMM</a></td>
 <td>Build a hybrid marker matrix using parental genotypes from inbred individuals</td></tr>
+<tr><td style="width: 25%;"><a href="condVarRotated.html">condVarRotated</a></td>
+<td>Get the rotated conditional variance matrix</td></tr>
+<tr><td style="width: 25%;"><a href="Dtable.html">Dtable</a></td>
+<td>Get the hypertable for predictions</td></tr>
 <tr><td style="width: 25%;"><a href="DT_cornhybrids.html">DTi_cornhybrids</a></td>
 <td>Corn crosses and markers</td></tr>
 <tr><td style="width: 25%;"><a href="DT_augment.html">DT_augment</a></td>
 <td>DT_augment design example.</td></tr>
+<tr><td style="width: 25%;"><a href="DT_big.html">DT_big</a></td>
+<td>Big GxE Quantitative Genetic Simulation</td></tr>
 <tr><td style="width: 25%;"><a href="DT_btdata.html">DT_btdata</a></td>
 <td>Blue Tit Data for a Quantitative Genetic Experiment</td></tr>
 <tr><td style="width: 25%;"><a href="DT_cornhybrids.html">DT_cornhybrids</a></td>
@@ -83,12 +91,10 @@
 <td>wheat lines dataset</td></tr>
 <tr><td style="width: 25%;"><a href="DT_yatesoats.html">DT_yatesoats</a></td>
 <td>Yield of oats in a split-block experiment</td></tr>
-<tr><td style="width: 25%;"><a href="fillData.html">fillData</a></td>
-<td>Filling gaps for a dataset to balance</td></tr>
-<tr><td style="width: 25%;"><a href="lmebreed-class.html">fitted-method</a></td>
+<tr><td style="width: 25%;"><a href="lmeb-class.html">fitted-method</a></td>
 <td>Relationship-based mixed-effects model fits</td></tr>
 <tr><td style="width: 25%;"><a href="getMME.html">getMME</a></td>
-<td>Build the mixed model equations from a lmebreed object</td></tr>
+<td>Build the mixed model equations from a lmeb object</td></tr>
 <tr><td style="width: 25%;"><a href="DT_rice.html">GTn_rice</a></td>
 <td>Rice lines dataset</td></tr>
 <tr><td style="width: 25%;"><a href="DT_cornhybrids.html">GT_cornhybrids</a></td>
@@ -101,38 +107,52 @@
 <td>Rice lines dataset</td></tr>
 <tr><td style="width: 25%;"><a href="DT_wheat.html">GT_wheat</a></td>
 <td>wheat lines dataset</td></tr>
+<tr><td style="width: 25%;"><a href="I.mat.html">I.mat</a></td>
+<td>Identity relationship matrix</td></tr>
 <tr><td style="width: 25%;"><a href="impute.html">imputev</a></td>
 <td>Imputing a numeric or character vector</td></tr>
 <tr><td style="width: 25%;"><a href="leg.html">leg</a></td>
 <td>Legendre polynomial matrix</td></tr>
 <tr><td style="width: 25%;"><a href="lme4breeding-package.html">lme4breeding</a></td>
 <td>*L*inear *m*ixed *e*quations *4* *B*reeding</td></tr>
-<tr><td style="width: 25%;"><a href="lmebreed.html">lmebreed</a></td>
-<td>Fit mixed-effects models incorporating relationships</td></tr>
-<tr><td style="width: 25%;"><a href="lmebreed-class.html">lmebreed-class</a></td>
+<tr><td style="width: 25%;"><a href="lmeb.html">lmeb</a></td>
+<td>Fit breeding-related mixed-effects models</td></tr>
+<tr><td style="width: 25%;"><a href="lmeb-class.html">lmeb-class</a></td>
 <td>Relationship-based mixed-effects model fits</td></tr>
+<tr><td style="width: 25%;"><a href="lmeb.html">lmebreed</a></td>
+<td>Fit breeding-related mixed-effects models</td></tr>
 <tr><td style="width: 25%;"><a href="DT_technow.html">Md_technow</a></td>
 <td>Genotypic and Phenotypic data from single cross hybrids (Technow et al.,2014)</td></tr>
 <tr><td style="width: 25%;"><a href="DT_technow.html">Mf_technow</a></td>
 <td>Genotypic and Phenotypic data from single cross hybrids (Technow et al.,2014)</td></tr>
+<tr><td style="width: 25%;"><a href="mkMmeIndex.html">mkMmeIndex</a></td>
+<td>Table to track effects</td></tr>
 <tr><td style="width: 25%;"><a href="DT_cpdata.html">MP_cpdata</a></td>
 <td>Genotypic and Phenotypic data for a CP population</td></tr>
 <tr><td style="width: 25%;"><a href="DT_polyploid.html">MP_polyploid</a></td>
 <td>Genotypic and Phenotypic data for a potato polyploid population</td></tr>
+<tr><td style="width: 25%;"><a href="DT_big.html">M_big</a></td>
+<td>Big GxE Quantitative Genetic Simulation</td></tr>
 <tr><td style="width: 25%;"><a href="overlay.html">overlay</a></td>
 <td>Overlay Matrix</td></tr>
+<tr><td style="width: 25%;"><a href="predict.lmeb.html">predict.lmeb</a></td>
+<td>Predict form of a LMM fitted with lmeb/lmebreed</td></tr>
+<tr><td style="width: 25%;"><a href="predict.lmeb.html">predict.lmebreed</a></td>
+<td>Predict form of a LMM fitted with lmeb/lmebreed</td></tr>
 <tr><td style="width: 25%;"><a href="DT_gryphon.html">P_gryphon</a></td>
 <td>Gryphon data from the Journal of Animal Ecology</td></tr>
-<tr><td style="width: 25%;"><a href="lmebreed-class.html">ranef-method</a></td>
+<tr><td style="width: 25%;"><a href="lmeb-class.html">ranef-method</a></td>
 <td>Relationship-based mixed-effects model fits</td></tr>
 <tr><td style="width: 25%;"><a href="redmm.html">redmm</a></td>
 <td>Reduced Model Matrix</td></tr>
-<tr><td style="width: 25%;"><a href="lmebreed-class.html">residuals-method</a></td>
+<tr><td style="width: 25%;"><a href="lmeb-class.html">residuals-method</a></td>
 <td>Relationship-based mixed-effects model fits</td></tr>
 <tr><td style="width: 25%;"><a href="rrm.html">rrm</a></td>
 <td>reduced rank matrix</td></tr>
 <tr><td style="width: 25%;"><a href="simage.html">simage</a></td>
 <td>Image of sparsity between two variables</td></tr>
+<tr><td style="width: 25%;"><a href="simage2.html">simage2</a></td>
+<td>Shortcut to sparse matrix image</td></tr>
 <tr><td style="width: 25%;"><a href="smm.html">smm</a></td>
 <td>sparse model matrix</td></tr>
 <tr><td style="width: 25%;"><a href="tps.html">tps</a></td>

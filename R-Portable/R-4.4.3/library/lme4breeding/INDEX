@@ -1,5 +1,6 @@
 A.mat                   Additive relationship matrix
 DT_augment              DT_augment design example.
+DT_big                  Big GxE Quantitative Genetic Simulation
 DT_btdata               Blue Tit Data for a Quantitative Genetic
                         Experiment
 DT_cornhybrids          Corn crosses and markers
@@ -22,26 +23,31 @@ DT_technow              Genotypic and Phenotypic data from single cross
                         hybrids (Technow et al.,2014)
 DT_wheat                wheat lines dataset
 DT_yatesoats            Yield of oats in a split-block experiment
+Dtable                  Get the hypertable for predictions
+I.mat                   Identity relationship matrix
 add.diallel.vars        add.diallel.vars
 adjBeta                 Adjusting fixed effects for intercept
 atcg1234                Letter to number converter
+balanceData             Balance a dataset
 bbasis                  Function for creating B-spline basis functions
                         (Eilers & Marx, 2010)
 build.HMM               Build a hybrid marker matrix using parental
                         genotypes from inbred individuals
-fillData                Filling gaps for a dataset to balance
-getMME                  Build the mixed model equations from a lmebreed
+condVarRotated          Get the rotated conditional variance matrix
+getMME                  Build the mixed model equations from a lmeb
                         object
 imputev                 Imputing a numeric or character vector
 leg                     Legendre polynomial matrix
 lme4breeding            *L*inear *m*ixed *e*quations *4* *B*reeding
-lmebreed                Fit mixed-effects models incorporating
-                        relationships
-lmebreed-class          Relationship-based mixed-effects model fits
+lmeb                    Fit breeding-related mixed-effects models
+lmeb-class              Relationship-based mixed-effects model fits
+mkMmeIndex              Table to track effects
 overlay                 Overlay Matrix
+predict.lmeb            Predict form of a LMM fitted with lmeb/lmebreed
 redmm                   Reduced Model Matrix
 rrm                     reduced rank matrix
 simage                  Image of sparsity between two variables
+simage2                 Shortcut to sparse matrix image
 smm                     sparse model matrix
 tps                     Get Tensor Product Spline Mixed Model Incidence
                         Matrices

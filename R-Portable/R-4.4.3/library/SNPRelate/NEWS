@@ -1,3 +1,22 @@
+CHANGES IN VERSION 1.44.0
+-------------------------
+
+UTILITIES
+
+    o tweak the display (by showing # of variants) when calculating the allele
+      counts and frequencies of a SeqArray GDS file
+
+    o tweak the display of date
+
+    o import RhpcBLASctl to control the number of threads in BLAS and LAPACK
+      in `snpgdsPCA()`
+
+    o set the threshold 'missing.rate=0.01' by default in
+      `snpgdsIBDMoM()`, `snpgdsIBDMLE()`, `snpgdsIBDKING()`, `snpgdsDiss()`,
+      `snpgdsGRM()`, `snpgdsFst()`, `snpgdsIndivBeta()`, `snpgdsIBS()`,
+      `snpgdsIBSNum()`, `snpgdsLDpruning()`, `snpgdsPCA()`, `snpgdsEIGMIX()`
+
+
 CHANGES IN VERSION 1.38.1
 -------------------------
 
