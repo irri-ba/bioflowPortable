@@ -16,11 +16,11 @@ RemoteHost: api.github.com
 RemoteRepo: cgiarPipeline
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 0769c2dfaf00bcbe576a352a564f03820bfc54e8
+RemoteSha: b37dfa154e311c7c448ac25b0b353e08a872cd7b
 GithubRepo: cgiarPipeline
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 0769c2dfaf00bcbe576a352a564f03820bfc54e8
+GithubSHA1: b37dfa154e311c7c448ac25b0b353e08a872cd7b
 NeedsCompilation: no
-Packaged: 2025-11-05 07:23:19 UTC; JBonifacio
-Built: R 4.4.3; ; 2025-11-05 07:23:21 UTC; windows
+Packaged: 2026-06-22 03:47:47 UTC; JBonifacio
+Built: R 4.4.3; ; 2026-06-22 03:47:50 UTC; windows

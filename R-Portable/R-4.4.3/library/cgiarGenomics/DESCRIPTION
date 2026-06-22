@@ -15,13 +15,13 @@ RoxygenNote: 7.3.2
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: cgiarGenomics
-RemoteUsername: serbier
+RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: f57ab1fc10a208702a2f930c9c2f8598292c76c1
+RemoteSha: e2beeb65a8a08c34b889611edfc72e27acddce08
 GithubRepo: cgiarGenomics
-GithubUsername: serbier
+GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: f57ab1fc10a208702a2f930c9c2f8598292c76c1
+GithubSHA1: e2beeb65a8a08c34b889611edfc72e27acddce08
 NeedsCompilation: no
-Packaged: 2025-11-05 07:24:31 UTC; JBonifacio
-Built: R 4.4.3; ; 2025-11-05 07:24:52 UTC; windows
+Packaged: 2026-06-22 03:45:17 UTC; JBonifacio
+Built: R 4.4.3; ; 2026-06-22 03:45:38 UTC; windows
