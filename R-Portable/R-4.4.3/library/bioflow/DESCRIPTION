@@ -1,7 +1,7 @@
 Package: bioflow
 Title: CGIAR Breeding Analytics Pipeline
 Description: CGIAR Breeding Analytics Pipeline
-Version: 4.1.0
+Version: 4.1.1
 Authors@R: c(
     person("Giovanny", "Covarrubias Pazaran", , "covaruberpaz@gmail.com", role = c("aut", "cre")),
     person("Ibnou", "Dieng", , "i.dieng@cgiar.org", role = c("aut")),
@@ -39,19 +39,19 @@ Remotes: Breeding-Analytics/cgiarBase,
         Breeding-Analytics/cgiarPipeline, Breeding-Analytics/cgiarOcs,
         Breeding-Analytics/cgiarGenomics, reyzaguirre/st4gi,
         covaruber/lme4breeding, icarda/QBMS
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: bioflow
-RemoteUsername: irri-ba
+RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 46c556444ed6b4fa33b7363e37f697c0bc3101ca
+RemoteSha: 27f285744301d6163c996f57e1bb73b6570a5bb1
 GithubRepo: bioflow
-GithubUsername: irri-ba
+GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 46c556444ed6b4fa33b7363e37f697c0bc3101ca
+GithubSHA1: 27f285744301d6163c996f57e1bb73b6570a5bb1
 NeedsCompilation: no
-Packaged: 2026-10-12 01:21:29 UTC; JBonifacio
+Packaged: 2026-10-22 03:48:36 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -61,4 +61,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2026-10-12 01:21:33 UTC; windows
+Built: R 4.4.3; ; 2026-10-22 03:48:40 UTC; windows
