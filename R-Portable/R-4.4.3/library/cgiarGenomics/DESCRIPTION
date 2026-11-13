@@ -18,11 +18,11 @@ RemoteHost: api.github.com
 RemoteRepo: cgiarGenomics
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: ce3f7141f751c42a7f91dc7cb0dd647444d7d1b9
+RemoteSha: fff38806b11ed874e799a8be9412d3a8f96c2de4
 GithubRepo: cgiarGenomics
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: ce3f7141f751c42a7f91dc7cb0dd647444d7d1b9
+GithubSHA1: fff38806b11ed874e799a8be9412d3a8f96c2de4
 NeedsCompilation: no
-Packaged: 2026-10-12 01:00:40 UTC; JBonifacio
-Built: R 4.4.3; ; 2026-10-12 01:00:55 UTC; windows
+Packaged: 2026-11-13 12:31:14 UTC; JBonifacio
+Built: R 4.4.3; ; 2026-11-13 12:31:34 UTC; windows

@@ -1,7 +1,7 @@
 Package: bioflow
 Title: CGIAR Breeding Analytics Pipeline
 Description: CGIAR Breeding Analytics Pipeline
-Version: 4.1.1
+Version: 4.1.2
 Authors@R: c(
     person("Giovanny", "Covarrubias Pazaran", , "covaruberpaz@gmail.com", role = c("aut", "cre")),
     person("Ibnou", "Dieng", , "i.dieng@cgiar.org", role = c("aut")),
@@ -45,13 +45,13 @@ RemoteHost: api.github.com
 RemoteRepo: bioflow
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 27f285744301d6163c996f57e1bb73b6570a5bb1
+RemoteSha: e9020a72341c35b4de36da51ef0f8c8fe7338e87
 GithubRepo: bioflow
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 27f285744301d6163c996f57e1bb73b6570a5bb1
+GithubSHA1: e9020a72341c35b4de36da51ef0f8c8fe7338e87
 NeedsCompilation: no
-Packaged: 2026-10-22 03:48:36 UTC; JBonifacio
+Packaged: 2026-11-13 12:33:51 UTC; JBonifacio
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -61,4 +61,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2026-10-22 03:48:40 UTC; windows
+Built: R 4.4.3; ; 2026-11-13 12:33:57 UTC; windows

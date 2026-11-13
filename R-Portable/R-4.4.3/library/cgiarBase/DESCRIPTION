@@ -9,17 +9,17 @@ Description: Software for analytical pipelines
 Depends: R (>= 3.5.0)
 License: GPL (>= 2)
 Imports: stats, graphics, grDevices, pbapply
-Suggests: parallel
+Suggests: parallel, adegenet
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: cgiarBase
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: e2e71f8469ffd3dc19c56c15b83ffdd24f3d9dd4
+RemoteSha: 493f0f872312fe6919bca6973ba386fff703539d
 GithubRepo: cgiarBase
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: e2e71f8469ffd3dc19c56c15b83ffdd24f3d9dd4
+GithubSHA1: 493f0f872312fe6919bca6973ba386fff703539d
 NeedsCompilation: no
-Packaged: 2026-10-12 00:59:19 UTC; JBonifacio
-Built: R 4.4.3; ; 2026-10-12 00:59:20 UTC; windows
+Packaged: 2026-11-13 12:32:56 UTC; JBonifacio
+Built: R 4.4.3; ; 2026-11-13 12:32:57 UTC; windows
